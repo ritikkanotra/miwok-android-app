@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/NumberStyle"
+    android:id="@+id/root_linear_layout"
+
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/represent_image"
+        android:layout_width="88dp"
+        android:layout_height="match_parent"
+        android:background="@color/tan_background" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/represent_image"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/miwok_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_toRightOf="@+id/represent_image"
+            tools:text="looti" />
+
+        <TextView
+            android:id="@+id/eng_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_below="@+id/miwok_text_view"
+            android:layout_toRightOf="@+id/represent_image"
+            tools:text="one" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:paddingRight="16dp"
+        android:src="@drawable/round_play_arrow_white_24dp"/>
+
+</RelativeLayout>
